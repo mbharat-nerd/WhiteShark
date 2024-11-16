@@ -3,13 +3,13 @@
 AD9364 (baremetal) interface on the Zedboard (and eventually other boards like the ZCU106).  Goal of this project is to understand SDR (Software Defined Radio), DSP algorithms, Deep Packet Inspection concepts (like real-time packet filters) and real-time TiB data storage.  This project is called WhiteShark because it was initially inspired by WireShark and FFShark.
 
 Primary References:
-<br>
+
 1.  https://wiki.analog.com/resources/eval/user-guides/ad-fmcomms4-ebz
-<br>
+
 2.  https://github.com/UofT-HPRC/fpga-bpf/
-<br>
-<br>
+
 Repo structure:
+<br>
 1  adi_hdl/ -> git submodule repo from https://github.com/analogdevicesinc/hdl/
 <br>
 2.  docs/ -> documentation like board user's guide, XDC files, design docs., test plans  etc.
