@@ -9,6 +9,8 @@ ZCU106WhiteShark/syn/*~
 ZCU106WhiteShark/src/*~
 ZCU106WhiteShark/sim/*~
 
+fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie
+
 zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.cache
 zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.hw
 zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.ip_user_files
