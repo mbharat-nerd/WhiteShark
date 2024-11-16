@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Nov 15 19:09:34 2024
+# Process ID: 1464823
+# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/pz_7z030_pcie
+# Command line: vivado
+# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/pz_7z030_pcie/vivado.log
+# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/pz_7z030_pcie/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/pz_7z030_pcie/pz_7z030_pcie.xpr
+INFO: [Project 1-313] Project file moved from '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie' since last save.
+WARNING: [Project 1-312] File not found as '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/src/constraints/pzfmc-7z015-7z030-1v8.xdc'; using path '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/src/constraints/pzfmc-7z015-7z030-1v8.xdc' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 7524.715 ; gain = 67.262 ; free physical = 6699 ; free virtual = 20607
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 15 19:11:32 2024...
