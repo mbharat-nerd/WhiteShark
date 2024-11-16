@@ -77,6 +77,7 @@ module system_axi_ad9361_adc_dma_0 (
   s_axi_rresp,
   s_axi_rdata,
   irq,
+  sync,
   m_dest_axi_aclk,
   m_dest_axi_aresetn,
   m_dest_axi_awaddr,
@@ -95,11 +96,25 @@ module system_axi_ad9361_adc_dma_0 (
   m_dest_axi_bvalid,
   m_dest_axi_bresp,
   m_dest_axi_bready,
+  m_sg_axi_aclk,
+  m_sg_axi_aresetn,
+  m_sg_axi_arready,
+  m_sg_axi_arvalid,
+  m_sg_axi_araddr,
+  m_sg_axi_arlen,
+  m_sg_axi_arsize,
+  m_sg_axi_arburst,
+  m_sg_axi_arprot,
+  m_sg_axi_arcache,
+  m_sg_axi_rdata,
+  m_sg_axi_rready,
+  m_sg_axi_rvalid,
+  m_sg_axi_rresp,
+  m_sg_axi_rlast,
   fifo_wr_clk,
   fifo_wr_en,
   fifo_wr_din,
   fifo_wr_overflow,
-  fifo_wr_sync,
   fifo_wr_xfer_req
 );
 
@@ -152,6 +167,7 @@ output wire [31 : 0] s_axi_rdata;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME irq, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 irq INTERRUPT" *)
 output wire irq;
+input wire sync;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_dest_axi_aclk, ASSOCIATED_BUSIF m_dest_axi, ASSOCIATED_RESET m_dest_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_sys_ps7_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_dest_axi_aclk CLK" *)
 input wire m_dest_axi_aclk;
@@ -192,6 +208,40 @@ input wire [1 : 0] m_dest_axi_bresp;
 THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_dest_axi BREADY" *)
 output wire m_dest_axi_bready;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sg_axi_aclk, ASSOCIATED_BUSIF m_sg_axi, ASSOCIATED_RESET m_sg_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_sys_ps7_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_sg_axi_aclk CLK" *)
+input wire m_sg_axi_aclk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sg_axi_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 m_sg_axi_aresetn RST" *)
+input wire m_sg_axi_aresetn;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARREADY" *)
+input wire m_sg_axi_arready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARVALID" *)
+output wire m_sg_axi_arvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARADDR" *)
+output wire [28 : 0] m_sg_axi_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARLEN" *)
+output wire [3 : 0] m_sg_axi_arlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARSIZE" *)
+output wire [2 : 0] m_sg_axi_arsize;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARBURST" *)
+output wire [1 : 0] m_sg_axi_arburst;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARPROT" *)
+output wire [2 : 0] m_sg_axi_arprot;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi ARCACHE" *)
+output wire [3 : 0] m_sg_axi_arcache;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi RDATA" *)
+input wire [63 : 0] m_sg_axi_rdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi RREADY" *)
+output wire m_sg_axi_rready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi RVALID" *)
+input wire m_sg_axi_rvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi RRESP" *)
+input wire [1 : 0] m_sg_axi_rresp;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sg_axi, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 29, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 1, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, NUM_READ_OUTSTANDING 0, NUM_WRITE_OUTSTANDING 0, MAX_BURST_LENGTH 16, PHASE 0.0, CLK_DOMAIN system_sys_ps7_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THR\
+EADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m_sg_axi RLAST" *)
+input wire m_sg_axi_rlast;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME fifo_wr_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, ASSOCIATED_BUSIF fifo_wr, INSERT_VIP 0, XIL_INTERFACENAME fifo_wr_signal_clock, ASSOCIATED_BUSIF fifo_wr, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_util_ad9361_divclk_0_clk_out, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 fifo_wr_clk CLK, xilinx.com:signal:clock:1.0 fifo_wr_signal_clock CLK" *)
 input wire fifo_wr_clk;
@@ -201,8 +251,6 @@ input wire fifo_wr_en;
 input wire [63 : 0] fifo_wr_din;
 (* X_INTERFACE_INFO = "analog.com:interface:fifo_wr:1.0 fifo_wr OVERFLOW" *)
 output wire fifo_wr_overflow;
-(* X_INTERFACE_INFO = "analog.com:interface:fifo_wr:1.0 fifo_wr SYNC" *)
-input wire fifo_wr_sync;
 (* X_INTERFACE_INFO = "analog.com:interface:fifo_wr:1.0 fifo_wr XFER_REQ" *)
 output wire fifo_wr_xfer_req;
 
@@ -210,17 +258,24 @@ output wire fifo_wr_xfer_req;
     .ID(0),
     .DMA_DATA_WIDTH_SRC(64),
     .DMA_DATA_WIDTH_DEST(64),
+    .DMA_DATA_WIDTH_SG(64),
     .DMA_LENGTH_WIDTH(24),
     .DMA_2D_TRANSFER(1'B0),
+    .DMA_SG_TRANSFER(1'B1),
     .ASYNC_CLK_REQ_SRC(1'B1),
     .ASYNC_CLK_SRC_DEST(1'B1),
     .ASYNC_CLK_DEST_REQ(1'B0),
+    .ASYNC_CLK_REQ_SG(1'B0),
+    .ASYNC_CLK_SRC_SG(1'B1),
+    .ASYNC_CLK_DEST_SG(1'B0),
     .AXI_SLICE_DEST(1'B0),
     .AXI_SLICE_SRC(1'B0),
+    .AXIS_TUSER_SYNC(1'B1),
     .SYNC_TRANSFER_START(1'B1),
     .CYCLIC(1'B0),
     .DMA_AXI_PROTOCOL_DEST(1),
     .DMA_AXI_PROTOCOL_SRC(1),
+    .DMA_AXI_PROTOCOL_SG(1),
     .DMA_TYPE_DEST(0),
     .DMA_TYPE_SRC(2),
     .DMA_AXI_ADDR_WIDTH(29),
@@ -228,12 +283,15 @@ output wire fifo_wr_xfer_req;
     .FIFO_SIZE(8),
     .AXI_ID_WIDTH_SRC(1),
     .AXI_ID_WIDTH_DEST(1),
+    .AXI_ID_WIDTH_SG(1),
     .DMA_AXIS_ID_W(8),
     .DMA_AXIS_DEST_W(4),
     .DISABLE_DEBUG_REGISTERS(1'B0),
     .ENABLE_DIAGNOSTICS_IF(1'B0),
     .ALLOW_ASYM_MEM(1),
-    .CACHE_COHERENT_DEST(1'B0)
+    .CACHE_COHERENT(1'B0),
+    .AXI_AXCACHE(4'B0011),
+    .AXI_AXPROT(3'B000)
   ) inst (
     .s_axi_aclk(s_axi_aclk),
     .s_axi_aresetn(s_axi_aresetn),
@@ -257,6 +315,7 @@ output wire fifo_wr_xfer_req;
     .s_axi_rresp(s_axi_rresp),
     .s_axi_rdata(s_axi_rdata),
     .irq(irq),
+    .sync(sync),
     .m_dest_axi_aclk(m_dest_axi_aclk),
     .m_dest_axi_aresetn(m_dest_axi_aresetn),
     .m_dest_axi_awaddr(m_dest_axi_awaddr),
@@ -333,6 +392,44 @@ output wire fifo_wr_xfer_req;
     .m_src_axi_awlock(),
     .m_src_axi_wid(),
     .m_src_axi_bid(1'B0),
+    .m_sg_axi_aclk(m_sg_axi_aclk),
+    .m_sg_axi_aresetn(m_sg_axi_aresetn),
+    .m_sg_axi_arready(m_sg_axi_arready),
+    .m_sg_axi_arvalid(m_sg_axi_arvalid),
+    .m_sg_axi_araddr(m_sg_axi_araddr),
+    .m_sg_axi_arlen(m_sg_axi_arlen),
+    .m_sg_axi_arsize(m_sg_axi_arsize),
+    .m_sg_axi_arburst(m_sg_axi_arburst),
+    .m_sg_axi_arprot(m_sg_axi_arprot),
+    .m_sg_axi_arcache(m_sg_axi_arcache),
+    .m_sg_axi_arid(),
+    .m_sg_axi_arlock(),
+    .m_sg_axi_rdata(m_sg_axi_rdata),
+    .m_sg_axi_rready(m_sg_axi_rready),
+    .m_sg_axi_rvalid(m_sg_axi_rvalid),
+    .m_sg_axi_rresp(m_sg_axi_rresp),
+    .m_sg_axi_rid(1'B0),
+    .m_sg_axi_rlast(m_sg_axi_rlast),
+    .m_sg_axi_awvalid(),
+    .m_sg_axi_awaddr(),
+    .m_sg_axi_awlen(),
+    .m_sg_axi_awsize(),
+    .m_sg_axi_awburst(),
+    .m_sg_axi_awcache(),
+    .m_sg_axi_awprot(),
+    .m_sg_axi_awready(1'B0),
+    .m_sg_axi_wvalid(),
+    .m_sg_axi_wdata(),
+    .m_sg_axi_wstrb(),
+    .m_sg_axi_wlast(),
+    .m_sg_axi_wready(1'B0),
+    .m_sg_axi_bvalid(1'B0),
+    .m_sg_axi_bresp(2'B0),
+    .m_sg_axi_bready(),
+    .m_sg_axi_awid(),
+    .m_sg_axi_awlock(),
+    .m_sg_axi_wid(),
+    .m_sg_axi_bid(1'B0),
     .s_axis_aclk(1'B0),
     .s_axis_ready(),
     .s_axis_valid(1'B0),
@@ -359,7 +456,6 @@ output wire fifo_wr_xfer_req;
     .fifo_wr_en(fifo_wr_en),
     .fifo_wr_din(fifo_wr_din),
     .fifo_wr_overflow(fifo_wr_overflow),
-    .fifo_wr_sync(fifo_wr_sync),
     .fifo_wr_xfer_req(fifo_wr_xfer_req),
     .fifo_rd_clk(1'B0),
     .fifo_rd_en(1'B0),

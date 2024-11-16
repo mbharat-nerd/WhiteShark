@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -37,7 +37,8 @@
 
 module up_hdmi_tx #(
 
-  parameter   ID = 0) (
+  parameter   ID = 0
+) (
 
   // hdmi interface
 
@@ -82,7 +83,8 @@ module up_hdmi_tx #(
   input                   up_rreq,
   input       [13:0]      up_raddr,
   output  reg [31:0]      up_rdata,
-  output  reg             up_rack);
+  output  reg             up_rack
+);
 
   localparam  PCORE_VERSION = 32'h00040063;
 
@@ -267,12 +269,23 @@ module up_hdmi_tx #(
 
   // resets
 
-  ad_rst i_core_rst_reg (.rst_async(up_core_preset), .clk(hdmi_clk), .rstn(), .rst(hdmi_rst));
-  ad_rst i_vdma_rst_reg (.rst_async(up_core_preset), .clk(vdma_clk), .rstn(), .rst(vdma_rst));
+  ad_rst i_core_rst_reg (
+    .rst_async(up_core_preset),
+    .clk(hdmi_clk),
+    .rstn(),
+    .rst(hdmi_rst));
+
+  ad_rst i_vdma_rst_reg (
+    .rst_async(up_core_preset),
+    .clk(vdma_clk),
+    .rstn(),
+    .rst(vdma_rst));
 
   // hdmi control & status
 
-  up_xfer_cntrl #(.DATA_WIDTH(236)) i_xfer_cntrl (
+  up_xfer_cntrl #(
+    .DATA_WIDTH(236)
+  ) i_xfer_cntrl (
     .up_rstn (up_rstn),
     .up_clk (up_clk),
     .up_data_cntrl ({ up_ss_bypass,
@@ -311,7 +324,9 @@ module up_hdmi_tx #(
                       hdmi_clip_max,
                       hdmi_clip_min}));
 
-  up_xfer_status #(.DATA_WIDTH(2)) i_xfer_status (
+  up_xfer_status #(
+    .DATA_WIDTH(2)
+  ) i_xfer_status (
     .up_rstn (up_rstn),
     .up_clk (up_clk),
     .up_data_status ({up_hdmi_status_s,
@@ -332,7 +347,9 @@ module up_hdmi_tx #(
 
   // vdma control & status
 
-  up_xfer_status #(.DATA_WIDTH(3)) i_vdma_xfer_status (
+  up_xfer_status #(
+    .DATA_WIDTH(3)
+  ) i_vdma_xfer_status (
     .up_rstn (up_rstn),
     .up_clk (up_clk),
     .up_data_status ({up_vdma_ovf_s,
@@ -345,6 +362,3 @@ module up_hdmi_tx #(
                       vdma_tpm_oos}));
 
 endmodule
-
-// ***************************************************************************
-// ***************************************************************************

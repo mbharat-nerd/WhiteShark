@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -44,7 +44,8 @@ module up_adc_channel #(
   parameter   USERPORTS_DISABLE = 0,
   parameter   DATAFORMAT_DISABLE = 0,
   parameter   DCFILTER_DISABLE = 0,
-  parameter   IQCORRECTION_DISABLE = 0) (
+  parameter   IQCORRECTION_DISABLE = 0
+) (
 
   // adc interface
 
@@ -65,6 +66,11 @@ module up_adc_channel #(
   input           adc_pn_err,
   input           adc_pn_oos,
   input           adc_or,
+  input   [31:0]  adc_read_data,
+  input   [ 7:0]  adc_status_header,
+  input           adc_crc_err,
+  output  [ 2:0]  adc_softspan,
+  output          up_adc_crc_err,
   output          up_adc_pn_err,
   output          up_adc_pn_oos,
   output          up_adc_or,
@@ -97,7 +103,8 @@ module up_adc_channel #(
   input           up_rreq,
   input   [13:0]  up_raddr,
   output  [31:0]  up_rdata,
-  output          up_rack);
+  output          up_rack
+);
 
   // internal registers
 
@@ -111,6 +118,7 @@ module up_adc_channel #(
   reg             up_adc_dfmt_enable = 'd0;
   reg             up_adc_pn_type = 'd0;
   reg             up_adc_enable = 'd0;
+  reg             up_adc_crc_err_int = 'd0;
   reg             up_adc_pn_err_int = 'd0;
   reg             up_adc_pn_oos_int = 'd0;
   reg             up_adc_or_int = 'd0;
@@ -133,14 +141,19 @@ module up_adc_channel #(
   reg     [15:0]  up_adc_iqcor_coeff_tc_2 = 'd0;
   reg     [ 3:0]  up_adc_pnseq_sel_m = 'd0;
   reg     [ 3:0]  up_adc_data_sel_m = 'd0;
+  reg     [ 2:0]  up_adc_softspan_int = 3'h7;
 
   // internal signals
 
   wire            up_wreq_s;
   wire            up_rreq_s;
+  wire            up_adc_crc_err_s;
   wire            up_adc_pn_err_s;
   wire            up_adc_pn_oos_s;
   wire            up_adc_or_s;
+  wire    [31:0]  up_adc_read_data_s;
+  wire    [ 7:0]  up_adc_status_header_s;
+  wire    [ 2:0]  up_adc_softspan_s;
 
   // 2's complement function
 
@@ -158,7 +171,7 @@ module up_adc_channel #(
   endfunction
 
   // up control/status
-
+  assign up_adc_crc_err = up_adc_crc_err_int;
   assign up_adc_pn_err = up_adc_pn_err_int;
   assign up_adc_pn_oos = up_adc_pn_oos_int;
   assign up_adc_or = up_adc_or_int;
@@ -169,6 +182,7 @@ module up_adc_channel #(
   assign up_usr_datatype_bits = up_usr_datatype_bits_int;
   assign up_usr_decimation_m = up_usr_decimation_m_int;
   assign up_usr_decimation_n = up_usr_decimation_n_int;
+  assign up_adc_softspan_s = up_adc_softspan_int;
 
   // decode block select
 
@@ -257,6 +271,7 @@ module up_adc_channel #(
     if (up_rstn == 0) begin
       up_adc_pn_type <= 'd0;
       up_adc_enable <= 'd0;
+      up_adc_crc_err_int <= 'd0;
       up_adc_pn_err_int <= 'd0;
       up_adc_pn_oos_int <= 'd0;
       up_adc_or_int <= 'd0;
@@ -264,6 +279,11 @@ module up_adc_channel #(
       if ((up_wreq_s == 1'b1) && (up_waddr[3:0] == 4'h0)) begin
         up_adc_pn_type <= up_wdata[1];
         up_adc_enable <= up_wdata[0];
+      end
+      if (up_adc_crc_err_s == 1'b1) begin
+        up_adc_crc_err_int <= 1'b1;
+      end else if ((up_wreq_s == 1'b1) && (up_waddr[3:0] == 4'h1)) begin
+        up_adc_crc_err_int <= up_adc_crc_err_int & ~up_wdata[12];
       end
       if (up_adc_pn_err_s == 1'b1) begin
         up_adc_pn_err_int <= 1'b1;
@@ -375,6 +395,16 @@ module up_adc_channel #(
   end
   endgenerate
 
+  always @(posedge up_clk) begin
+    if (up_rstn == 0) begin
+      up_adc_softspan_int <= 3'd7;
+    end else begin
+      if ((up_wreq_s == 1'b1) && (up_waddr[3:0] == 4'hA)) begin
+        up_adc_softspan_int <= up_wdata[2:0];
+      end
+    end
+  end
+
   // processor read interface
 
   assign up_rack = up_rack_int;
@@ -392,7 +422,8 @@ module up_adc_channel #(
                                   up_adc_iqcor_enb, up_adc_dcfilt_enb,
                                   1'd0, up_adc_dfmt_se, up_adc_dfmt_type, up_adc_dfmt_enable,
                                   2'd0, up_adc_pn_type, up_adc_enable};
-          4'h1: up_rdata_int <= { 29'd0, up_adc_pn_err_int, up_adc_pn_oos_int, up_adc_or_int};
+          4'h1: up_rdata_int <= { 19'd0, up_adc_crc_err_int, up_adc_status_header_s, 1'd0, up_adc_pn_err_int, up_adc_pn_oos_int, up_adc_or_int};
+          4'h2: up_rdata_int <= { up_adc_read_data_s};
           4'h4: up_rdata_int <= { up_adc_dcfilt_offset, up_adc_dcfilt_coeff};
           4'h5: up_rdata_int <= { up_adc_iqcor_coeff_1, up_adc_iqcor_coeff_2};
           4'h6: up_rdata_int <= { 12'd0, up_adc_pnseq_sel, 12'd0, up_adc_data_sel};
@@ -400,6 +431,7 @@ module up_adc_channel #(
                                   adc_usr_datatype_shift, adc_usr_datatype_total_bits,
                                   adc_usr_datatype_bits};
           4'h9: up_rdata_int <= { adc_usr_decimation_m, adc_usr_decimation_n};
+          4'hA: up_rdata_int <= { 29'd0, up_adc_softspan_int};
           default: up_rdata_int <= 0;
         endcase
       end else begin
@@ -442,7 +474,9 @@ module up_adc_channel #(
 
   // adc control & status
 
-  up_xfer_cntrl #(.DATA_WIDTH(78)) i_xfer_cntrl (
+  up_xfer_cntrl #(
+    .DATA_WIDTH(81)
+  ) i_xfer_cntrl (
     .up_rstn (up_rstn),
     .up_clk (up_clk),
     .up_data_cntrl ({ up_adc_iqcor_enb,
@@ -456,7 +490,8 @@ module up_adc_channel #(
                       up_adc_iqcor_coeff_tc_1,
                       up_adc_iqcor_coeff_tc_2,
                       up_adc_pnseq_sel_m,
-                      up_adc_data_sel_m}),
+                      up_adc_data_sel_m,
+                      up_adc_softspan_s}),
     .up_xfer_done (),
     .d_rst (adc_rst),
     .d_clk (adc_clk),
@@ -471,21 +506,27 @@ module up_adc_channel #(
                       adc_iqcor_coeff_1,
                       adc_iqcor_coeff_2,
                       adc_pnseq_sel,
-                      adc_data_sel}));
+                      adc_data_sel,
+                      adc_softspan}));
 
-  up_xfer_status #(.DATA_WIDTH(3)) i_xfer_status (
+  up_xfer_status #(
+    .DATA_WIDTH(44)
+  ) i_xfer_status (
     .up_rstn (up_rstn),
     .up_clk (up_clk),
-    .up_data_status ({up_adc_pn_err_s,
+    .up_data_status ({up_adc_status_header_s,
+                      up_adc_crc_err_s,
+                      up_adc_pn_err_s,
                       up_adc_pn_oos_s,
-                      up_adc_or_s}),
+                      up_adc_or_s,
+                      up_adc_read_data_s}),
     .d_rst (adc_rst),
     .d_clk (adc_clk),
-    .d_data_status ({ adc_pn_err,
+    .d_data_status ({ adc_status_header,
+                      adc_crc_err,
+                      adc_pn_err,
                       adc_pn_oos,
-                      adc_or}));
+                      adc_or,
+                      adc_read_data}));
 
 endmodule
-
-// ***************************************************************************
-// ***************************************************************************

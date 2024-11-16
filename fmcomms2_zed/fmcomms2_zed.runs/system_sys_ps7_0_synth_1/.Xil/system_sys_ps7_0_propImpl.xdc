@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc rfile:../../../fmcomms2_zed.gen/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc rfile:../../../fmcomms2_zed.gen/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3

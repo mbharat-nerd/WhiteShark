@@ -1,0 +1,91 @@
+/*
+
+Xilinx Vitis v2021.1.0 (64-bit) [Major: 2021, Minor: 1]
+SW Build 3245906 on 2021-06-09-18:10:55
+
+Process ID (PID): 1703591
+License: Customer
+
+Current time: 	Sat Nov 16 08:16:51 PST 2024
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Ubuntu
+OS Version: 6.8.0-47-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :1
+Screen size: 3840x2160
+Available screens: 2
+Available disk space: 601 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2021.1/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o:/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2/lib/:/tools/Xilinx/Vitis/2021.1/tps/lnx64/jre11.0.2/lib//server:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.1/lib/lnx64.o:/tools/Xilinx/Vitis/2021.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2021.1/aietools/lib/lnx64.o:/tools/Xilinx/Vivado/2021.1/bin/../lnx64/tools/dot/lib:/tools/Xilinx/Vitis/2021.1/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2021.1/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	bharathwaj
+User home directory: /home/bharathwaj
+User working directory: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2021.1
+RDI_DATADIR: /tools/Xilinx/Vitis/2021.1/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2021.1/bin
+
+Vitis preferences directory: /home/bharathwaj/.Xilinx/Vitis/2021.1/
+Vitis workspace directory: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/zedBaremetalSoftware
+Vitis workspace log file location: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/zedBaremetalSoftware/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DIR: /tools/Xilinx
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2021.1
+XILINX_SDK: /tools/Xilinx/Vitis/2021.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2021.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2021.1
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("Includes", "app_system > app", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("Run", "app", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "ProjectExplorer", "MenuItem.RUN_CONFIGURATIONS");
+selectTree("Single Application Debug", "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectToolBarButton("New launch configuration", "Run Configurations", "LaunchConfigurationsDialog", "ToolItem.NEW_LAUNCH_CONFIGURATION");
+selectTab("Application", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.APPLICATION");
+selectTab("Target Setup", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectButton("Browse", "Run Configurations", "LaunchConfigurationsDialog", "Button.BROWSE");
+setFileDialog("/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed/fmcomms2_zed.runs/impl_1/system_top.bit", "Bitstream File", "SDXFileDialog", "Button.OK");
+selectButton("Run", "Run Configurations", "LaunchConfigurationsDialog", "Button.RUN");
+selectToolBarMenuButton("Run", "app", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "ProjectExplorer", "MenuItem.RUN_CONFIGURATIONS");
+selectTab("Target Setup", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectButton("Run", "Run Configurations", "LaunchConfigurationsDialog", "Button.RUN");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectToolBarMenuButton("Run", "app", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Explorer", "ProjectExplorer", "MenuItem.RUN_CONFIGURATIONS");
+selectTab("Target Setup", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectButton("Run", "Run Configurations", "LaunchConfigurationsDialog", "Button.RUN");
+selectCheckBox("Remember my decision", Boolean.TRUE, "Confirm Exit", "MessageDialogWithToggle", "Button.REMEMBER_MY_DECISION");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 11/16/24, 8:19:59 AM PST
+// Elapsed time: 00:03:09
+

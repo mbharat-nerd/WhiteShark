@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2024 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -39,7 +39,8 @@ module ad_mul #(
 
   parameter   A_DATA_WIDTH = 17,
   parameter   B_DATA_WIDTH = 17,
-  parameter   DELAY_DATA_WIDTH = 16) (
+  parameter   DELAY_DATA_WIDTH = 16
+) (
 
   // data_p = data_a * data_b;
 
@@ -51,8 +52,8 @@ module ad_mul #(
   // delay interface
 
   input       [(DELAY_DATA_WIDTH-1):0]  ddata_in,
-  output  reg [(DELAY_DATA_WIDTH-1):0]  ddata_out);
-
+  output  reg [(DELAY_DATA_WIDTH-1):0]  ddata_out = 'd0
+);
 
   // internal registers
 
@@ -70,8 +71,8 @@ module ad_mul #(
   MULT_MACRO #(
     .LATENCY (3),
     .WIDTH_A (A_DATA_WIDTH),
-    .WIDTH_B (B_DATA_WIDTH))
-  i_mult_macro (
+    .WIDTH_B (B_DATA_WIDTH)
+  ) i_mult_macro (
     .CE (1'b1),
     .RST (1'b0),
     .CLK (clk),
@@ -80,6 +81,3 @@ module ad_mul #(
     .P (data_p));
 
 endmodule
-
-// ***************************************************************************
-// ***************************************************************************

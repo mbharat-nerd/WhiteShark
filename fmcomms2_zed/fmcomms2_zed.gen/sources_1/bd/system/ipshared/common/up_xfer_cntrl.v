@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -37,7 +37,8 @@
 
 module up_xfer_cntrl #(
 
-  parameter     DATA_WIDTH = 8) (
+  parameter     DATA_WIDTH = 8
+) (
 
   // up interface
 
@@ -50,7 +51,8 @@ module up_xfer_cntrl #(
 
   input                       d_rst,
   input                       d_clk,
-  output  [(DATA_WIDTH-1):0]  d_data_cntrl);
+  output  [(DATA_WIDTH-1):0]  d_data_cntrl
+);
 
   // internal registers
 
@@ -121,6 +123,3 @@ module up_xfer_cntrl #(
   end
 
 endmodule
-
-// ***************************************************************************
-// ***************************************************************************

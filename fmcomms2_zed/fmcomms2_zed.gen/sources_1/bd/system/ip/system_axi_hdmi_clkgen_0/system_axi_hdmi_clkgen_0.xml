@@ -899,7 +899,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:08 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -930,7 +930,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:08 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -948,7 +948,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:51:46 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:53:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1451,7 +1451,31 @@
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_pairs_00ecfe9a</spirit:name>
+      <spirit:name>choice_pairs_19f99f31</spirit:name>
+      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1">10</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1L">11</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1H">12</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1HV">13</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1LV">14</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2">20</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2L">21</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2LV">22</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2MP">23</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2LVC">24</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2LVI">25</spirit:enumeration>
+      <spirit:enumeration spirit:text="-3">30</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_28f798a2</spirit:name>
+      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="7series">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="ultrascale">2</spirit:enumeration>
+      <spirit:enumeration spirit:text="ultrascale+">3</spirit:enumeration>
+      <spirit:enumeration spirit:text="versal">4</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_a6e6e044</spirit:name>
       <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
       <spirit:enumeration spirit:text="rf">1</spirit:enumeration>
       <spirit:enumeration spirit:text="fl">2</spirit:enumeration>
@@ -1473,31 +1497,10 @@
       <spirit:enumeration spirit:text="fs">18</spirit:enumeration>
       <spirit:enumeration spirit:text="fi">19</spirit:enumeration>
       <spirit:enumeration spirit:text="vs">20</spirit:enumeration>
+      <spirit:enumeration spirit:text="ls">21</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_pairs_28f798a2</spirit:name>
-      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
-      <spirit:enumeration spirit:text="7series">1</spirit:enumeration>
-      <spirit:enumeration spirit:text="ultrascale">2</spirit:enumeration>
-      <spirit:enumeration spirit:text="ultrascale+">3</spirit:enumeration>
-      <spirit:enumeration spirit:text="versal">4</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_pairs_87c99265</spirit:name>
-      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1">10</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1L">11</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1H">12</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1HV">13</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1LV">14</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2">20</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2L">21</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2LV">22</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2MP">23</spirit:enumeration>
-      <spirit:enumeration spirit:text="-3">30</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_pairs_fc01a186</spirit:name>
+      <spirit:name>choice_pairs_a897e79d</spirit:name>
       <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
       <spirit:enumeration spirit:text="artix">1</spirit:enumeration>
       <spirit:enumeration spirit:text="kintex">2</spirit:enumeration>
@@ -1505,6 +1508,7 @@
       <spirit:enumeration spirit:text="zynq">4</spirit:enumeration>
       <spirit:enumeration spirit:text="versalprime">5</spirit:enumeration>
       <spirit:enumeration spirit:text="versalaicore">6</spirit:enumeration>
+      <spirit:enumeration spirit:text="versalpremium">7</spirit:enumeration>
     </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
@@ -1535,7 +1539,7 @@
         <spirit:fileType>tclSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/184f/axi_clkgen.v</spirit:name>
+        <spirit:name>../../ipshared/714f/axi_clkgen.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1599,17 +1603,17 @@
     <spirit:parameter>
       <spirit:name>FPGA_FAMILY</spirit:name>
       <spirit:displayName>Fpga Family</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.FPGA_FAMILY" spirit:choiceRef="choice_pairs_fc01a186">4</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.FPGA_FAMILY" spirit:choiceRef="choice_pairs_a897e79d">4</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SPEED_GRADE</spirit:name>
       <spirit:displayName>Speed Grade</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SPEED_GRADE" spirit:choiceRef="choice_pairs_87c99265">10</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SPEED_GRADE" spirit:choiceRef="choice_pairs_19f99f31">10</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DEV_PACKAGE</spirit:name>
       <spirit:displayName>Dev Package</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEV_PACKAGE" spirit:choiceRef="choice_pairs_00ecfe9a">14</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEV_PACKAGE" spirit:choiceRef="choice_pairs_a6e6e044">14</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>FPGA_VOLTAGE</spirit:name>
@@ -1763,7 +1767,7 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1e8491e9"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6bc79930"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6d5ca090"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="74e5f4d9"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a9399c09"/>

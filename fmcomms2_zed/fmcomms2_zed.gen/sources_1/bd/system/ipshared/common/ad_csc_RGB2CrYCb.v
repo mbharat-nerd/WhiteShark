@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -43,7 +43,8 @@
 
 module ad_csc_RGB2CrYCb #(
 
-  parameter   DELAY_DATA_WIDTH = 16) (
+  parameter   DELAY_DATA_WIDTH = 16
+) (
 
   // R-G-B inputs
 
@@ -54,15 +55,16 @@ module ad_csc_RGB2CrYCb #(
   // Cr-Y-Cb outputs
 
   output      [DELAY_DATA_WIDTH-1:0]  CrYCb_sync,
-  output      [23:0]                  CrYCb_data);
+  output      [23:0]                  CrYCb_data
+);
 
   localparam  DW = DELAY_DATA_WIDTH - 1;
 
   // Cr (red-diff)
 
   ad_csc #(
-    .DELAY_DW(DELAY_DATA_WIDTH))
-  j_csc_1_Cr (
+    .DELAY_DW(DELAY_DATA_WIDTH)
+  ) j_csc_1_Cr (
     .clk (clk),
     .sync (RGB_sync),
     .data (RGB_data),
@@ -76,8 +78,8 @@ module ad_csc_RGB2CrYCb #(
   // Y (luma)
 
   ad_csc #(
-    .DELAY_DW(0))
-  j_csc_1_Y (
+    .DELAY_DW(0)
+  ) j_csc_1_Y (
     .clk (clk),
     .sync (1'd0),
     .data (RGB_data),
@@ -91,8 +93,8 @@ module ad_csc_RGB2CrYCb #(
   // Cb (blue-diff)
 
   ad_csc #(
-    .DELAY_DW(0))
-  j_csc_1_Cb (
+    .DELAY_DW(0)
+  ) j_csc_1_Cb (
     .clk (clk),
     .sync (1'd0),
     .data (RGB_data),
@@ -104,6 +106,3 @@ module ad_csc_RGB2CrYCb #(
     .csc_data (CrYCb_data[7:0]));
 
 endmodule
-
-// ***************************************************************************
-// ***************************************************************************

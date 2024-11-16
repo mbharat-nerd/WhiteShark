@@ -875,11 +875,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:11 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:23 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7d0b3802</spirit:value>
+            <spirit:value>9:bdcbd548</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -890,7 +890,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7d0b3802</spirit:value>
+            <spirit:value>9:bdcbd548</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -906,11 +906,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:11 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:23 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7d0b3802</spirit:value>
+            <spirit:value>9:bdcbd548</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -923,8 +923,12 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Nov 16 15:56:52 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7d0b3802</spirit:value>
+            <spirit:value>9:bdcbd548</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1384,9 +1388,6 @@
               <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
-          <spirit:driver>
-            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
-          </spirit:driver>
         </spirit:wire>
       </spirit:port>
       <spirit:port>
@@ -2388,6 +2389,11 @@
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DAC_DDS_TYPE">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>DAC_DDS_PHASE_DW</spirit:name>
+        <spirit:displayName>Dac Dds Phase Dw</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DAC_DDS_PHASE_DW">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>DAC_DDS_CORDIC_DW</spirit:name>
         <spirit:displayName>Dac Dds Cordic Dw</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DAC_DDS_CORDIC_DW">14</spirit:value>
@@ -2453,7 +2459,31 @@
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_pairs_00ecfe9a</spirit:name>
+      <spirit:name>choice_pairs_19f99f31</spirit:name>
+      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1">10</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1L">11</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1H">12</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1HV">13</spirit:enumeration>
+      <spirit:enumeration spirit:text="-1LV">14</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2">20</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2L">21</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2LV">22</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2MP">23</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2LVC">24</spirit:enumeration>
+      <spirit:enumeration spirit:text="-2LVI">25</spirit:enumeration>
+      <spirit:enumeration spirit:text="-3">30</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_28f798a2</spirit:name>
+      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="7series">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="ultrascale">2</spirit:enumeration>
+      <spirit:enumeration spirit:text="ultrascale+">3</spirit:enumeration>
+      <spirit:enumeration spirit:text="versal">4</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_a6e6e044</spirit:name>
       <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
       <spirit:enumeration spirit:text="rf">1</spirit:enumeration>
       <spirit:enumeration spirit:text="fl">2</spirit:enumeration>
@@ -2475,31 +2505,10 @@
       <spirit:enumeration spirit:text="fs">18</spirit:enumeration>
       <spirit:enumeration spirit:text="fi">19</spirit:enumeration>
       <spirit:enumeration spirit:text="vs">20</spirit:enumeration>
+      <spirit:enumeration spirit:text="ls">21</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_pairs_28f798a2</spirit:name>
-      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
-      <spirit:enumeration spirit:text="7series">1</spirit:enumeration>
-      <spirit:enumeration spirit:text="ultrascale">2</spirit:enumeration>
-      <spirit:enumeration spirit:text="ultrascale+">3</spirit:enumeration>
-      <spirit:enumeration spirit:text="versal">4</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_pairs_87c99265</spirit:name>
-      <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1">10</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1L">11</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1H">12</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1HV">13</spirit:enumeration>
-      <spirit:enumeration spirit:text="-1LV">14</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2">20</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2L">21</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2LV">22</spirit:enumeration>
-      <spirit:enumeration spirit:text="-2MP">23</spirit:enumeration>
-      <spirit:enumeration spirit:text="-3">30</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_pairs_fc01a186</spirit:name>
+      <spirit:name>choice_pairs_a897e79d</spirit:name>
       <spirit:enumeration spirit:text="Unknown">0</spirit:enumeration>
       <spirit:enumeration spirit:text="artix">1</spirit:enumeration>
       <spirit:enumeration spirit:text="kintex">2</spirit:enumeration>
@@ -2507,11 +2516,16 @@
       <spirit:enumeration spirit:text="zynq">4</spirit:enumeration>
       <spirit:enumeration spirit:text="versalprime">5</spirit:enumeration>
       <spirit:enumeration spirit:text="versalaicore">6</spirit:enumeration>
+      <spirit:enumeration spirit:text="versalpremium">7</spirit:enumeration>
     </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>ad_pps_receiver_constr.txt</spirit:name>
+        <spirit:userFileType>text</spirit:userFileType>
+      </spirit:file>
       <spirit:file>
         <spirit:name>system_axi_ad9361_0_pps_constr.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
@@ -2613,39 +2627,39 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/xilinx/axi_ad9361_cmos_if.v</spirit:name>
+        <spirit:name>../../ipshared/1506/xilinx/axi_ad9361_cmos_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/xilinx/axi_ad9361_lvds_if.v</spirit:name>
+        <spirit:name>../../ipshared/1506/xilinx/axi_ad9361_lvds_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361_rx.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361_rx.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361_rx_channel.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361_rx_channel.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361_rx_pnmon.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361_rx_pnmon.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361_tdd.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361_tdd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361_tdd_if.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361_tdd_if.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361_tx.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361_tx.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361_tx_channel.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361_tx_channel.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2689,7 +2703,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/084d/axi_ad9361.v</spirit:name>
+        <spirit:name>../../ipshared/1506/axi_ad9361.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2758,17 +2772,17 @@
     <spirit:parameter>
       <spirit:name>FPGA_FAMILY</spirit:name>
       <spirit:displayName>Fpga Family</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.FPGA_FAMILY" spirit:choiceRef="choice_pairs_fc01a186">4</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.FPGA_FAMILY" spirit:choiceRef="choice_pairs_a897e79d">4</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SPEED_GRADE</spirit:name>
       <spirit:displayName>Speed Grade</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SPEED_GRADE" spirit:choiceRef="choice_pairs_87c99265">10</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SPEED_GRADE" spirit:choiceRef="choice_pairs_19f99f31">10</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DEV_PACKAGE</spirit:name>
       <spirit:displayName>Dev Package</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEV_PACKAGE" spirit:choiceRef="choice_pairs_00ecfe9a">14</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEV_PACKAGE" spirit:choiceRef="choice_pairs_a6e6e044">14</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>TDD_DISABLE</spirit:name>
@@ -2844,6 +2858,11 @@
       <spirit:name>DAC_DDS_TYPE</spirit:name>
       <spirit:displayName>Dac Dds Type</spirit:displayName>
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DAC_DDS_TYPE">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DAC_DDS_PHASE_DW</spirit:name>
+      <spirit:displayName>Dac Dds Phase Dw</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DAC_DDS_PHASE_DW">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DAC_DDS_CORDIC_DW</spirit:name>
@@ -2977,10 +2996,10 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4da51009"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="16977efc"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a44efa2b"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="29208278"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ca060e5a"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="a13a7851"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="709878f9"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="c64fb77e"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2018 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2018-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -8,7 +8,7 @@
 // terms.
 //
 // The user should read each of these license terms, and understand the
-// freedoms and responsabilities that he or she has by using this source/core.
+// freedoms and responsibilities that he or she has by using this source/core.
 //
 // This core is distributed in the hope that it will be useful, but WITHOUT ANY
 // WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -65,19 +65,19 @@ module pack_ctrl #(
 
   localparam z = 2**MUX_ORDER;
 
-  /* This part is magic */
+  // This part is magic
   for (i = 0; i < NUM_STAGES; i = i + 1) begin: ctrl_gen_outer
     localparam k0 = 2**(PORT_ADDRESS_WIDTH - MUX_ORDER*(i+1)-MIN_STAGE);
     localparam k1 = 2**(MUX_ORDER*(1+i)+MIN_STAGE);
 
     for (j = 0; j < NUM_OF_PORTS; j = j + 1) begin: ctrl_gen_inner
-      /* Offset in the ctrl signal */
+      // Offset in the ctrl signal
       localparam s = (i*NUM_OF_PORTS+j)*MUX_ORDER;
       localparam m = (j % k1) * k0;
       localparam n = j / k1;
 
       if (MUX_ORDER == 1 && j % 2 == 0) begin
-        /* This is an optimization that only works for 2:1 MUXes */
+        // This is an optimization that only works for 2:1 MUXes
         assign ctrl1[s] = ~ctrl1[s+1];
       end else begin
         assign ctrl1[s+:MUX_ORDER] = (j - (prefix_count[m*PORT_ADDRESS_WIDTH+:PORT_ADDRESS_WIDTH] + n - rotate) / k0) % z;
@@ -86,7 +86,7 @@ module pack_ctrl #(
   end
 
   if (PACK == 0 || MUX_ORDER == 1) begin
-    /* For 2:1 MUXes pack and unpack control is the same */
+    // For 2:1 MUXes pack and unpack control is the same
     assign ctrl = ctrl1;
   end else begin
     /*

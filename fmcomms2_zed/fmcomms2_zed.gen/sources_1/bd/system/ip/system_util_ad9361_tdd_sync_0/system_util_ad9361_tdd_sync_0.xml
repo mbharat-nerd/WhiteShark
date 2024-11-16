@@ -126,7 +126,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:11 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:23 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -157,7 +157,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:11 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:23 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -173,6 +173,10 @@
           <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Nov 16 15:55:51 UTC 2024</spirit:value>
+          </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:8e0460c5</spirit:value>
@@ -269,7 +273,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ed17/util_tdd_sync.v</spirit:name>
+        <spirit:name>../../ipshared/ce16/util_tdd_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -348,7 +352,7 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="af646e7f"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="87906293"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="66f8b5ce"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="30abfb13"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="7026aaad"/>

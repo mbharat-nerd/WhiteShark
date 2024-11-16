@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Nov 16 08:21:56 2024
+# Process ID: 1704957
+# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed
+# Command line: vivado
+# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed/vivado.log
+# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed/fmcomms2_zed.xpr
+update_compile_order -fileset sources_1
+close_project

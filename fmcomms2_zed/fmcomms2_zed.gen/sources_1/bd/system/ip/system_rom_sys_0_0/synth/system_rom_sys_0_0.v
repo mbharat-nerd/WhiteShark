@@ -69,7 +69,7 @@ output wire [31 : 0] rom_data;
   sysid_rom #(
     .ROM_WIDTH(32),
     .ROM_ADDR_BITS(9),
-    .PATH_TO_FILE("/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/mem_init_sys.txt")
+    .PATH_TO_FILE("/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/mem_init_sys.txt")
   ) inst (
     .clk(clk),
     .rom_addr(rom_addr),

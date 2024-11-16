@@ -10,9 +10,7 @@
 
 source system_axi_i2s_adi_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/library'.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/ghdl/library'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
 Command: synth_design -top system_axi_i2s_adi_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
@@ -21,11 +19,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 978813
+INFO: [Synth 8-7075] Helper process launched with PID 1681328
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2455.047 ; gain = 0.000 ; free physical = 3673 ; free virtual = 19710
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2456.969 ; gain = 0.000 ; free physical = 2746 ; free virtual = 14941
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'system_axi_i2s_adi_0' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/synth/system_axi_i2s_adi_0.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'system_axi_i2s_adi_0' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/synth/system_axi_i2s_adi_0.vhd:105]
 	Parameter SLOT_WIDTH bound to: 24 - type: integer 
 	Parameter LRCLK_POL bound to: 0 - type: integer 
 	Parameter BCLK_POL bound to: 0 - type: integer 
@@ -36,86 +34,86 @@ INFO: [Synth 8-638] synthesizing module 'system_axi_i2s_adi_0' [/home/bharathwaj
 	Parameter NUM_OF_CHANNEL bound to: 1 - type: integer 
 	Parameter HAS_TX bound to: 1 - type: integer 
 	Parameter HAS_RX bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'axi_i2s_adi' declared at '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/axi_i2s_adi.vhd:53' bound to instance 'U0' of component 'axi_i2s_adi' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/synth/system_axi_i2s_adi_0.vhd:246]
-INFO: [Synth 8-638] synthesizing module 'axi_i2s_adi' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/axi_i2s_adi.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'pl330_dma_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'dma_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/dma_fifo.vhd:62]
-INFO: [Synth 8-256] done synthesizing module 'dma_fifo' (1#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/dma_fifo.vhd:62]
-INFO: [Synth 8-256] done synthesizing module 'pl330_dma_fifo' (2#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'pl330_dma_fifo__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
-INFO: [Synth 8-256] done synthesizing module 'pl330_dma_fifo__parameterized0' (2#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'i2s_controller' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_controller.vhd:80]
-INFO: [Synth 8-638] synthesizing module 'fifo_synchronizer' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/fifo_synchronizer.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'fifo_synchronizer' (3#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/fifo_synchronizer.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'i2s_clkgen' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_clkgen.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'i2s_clkgen' (4#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_clkgen.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'i2s_tx' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_tx.vhd:60]
-INFO: [Synth 8-256] done synthesizing module 'i2s_tx' (5#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_tx.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'i2s_rx' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_rx.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'i2s_rx' (6#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_rx.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'i2s_controller' (7#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/i2s_controller.vhd:80]
-INFO: [Synth 8-638] synthesizing module 'axi_ctrlif' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/axi_ctrlif.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'axi_ctrlif' (8#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/axi_ctrlif.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'axi_i2s_adi' (9#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/44a5/axi_i2s_adi.vhd:146]
-INFO: [Synth 8-256] done synthesizing module 'system_axi_i2s_adi_0' (10#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/synth/system_axi_i2s_adi_0.vhd:105]
+INFO: [Synth 8-3491] module 'axi_i2s_adi' declared at '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/axi_i2s_adi.vhd:53' bound to instance 'U0' of component 'axi_i2s_adi' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/synth/system_axi_i2s_adi_0.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'axi_i2s_adi' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/axi_i2s_adi.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'pl330_dma_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'dma_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/dma_fifo.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'dma_fifo' (1#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/dma_fifo.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'pl330_dma_fifo' (2#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'pl330_dma_fifo__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'pl330_dma_fifo__parameterized0' (2#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/pl330_dma_fifo.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'i2s_controller' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_controller.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'fifo_synchronizer' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/fifo_synchronizer.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'fifo_synchronizer' (3#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/fifo_synchronizer.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'i2s_clkgen' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_clkgen.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'i2s_clkgen' (4#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_clkgen.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'i2s_tx' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_tx.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'i2s_tx' (5#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_tx.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'i2s_rx' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_rx.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'i2s_rx' (6#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_rx.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'i2s_controller' (7#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/i2s_controller.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'axi_ctrlif' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/axi_ctrlif.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'axi_ctrlif' (8#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/axi_ctrlif.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'axi_i2s_adi' (9#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/c64a/axi_i2s_adi.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_i2s_adi_0' (10#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/synth/system_axi_i2s_adi_0.vhd:105]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2455.047 ; gain = 0.000 ; free physical = 2811 ; free virtual = 18849
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2456.969 ; gain = 0.000 ; free physical = 1859 ; free virtual = 14055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2455.047 ; gain = 0.000 ; free physical = 2927 ; free virtual = 18966
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2456.969 ; gain = 0.000 ; free physical = 1861 ; free virtual = 14053
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2455.047 ; gain = 0.000 ; free physical = 2927 ; free virtual = 18966
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2456.969 ; gain = 0.000 ; free physical = 1861 ; free virtual = 14053
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2455.047 ; gain = 0.000 ; free physical = 2998 ; free virtual = 19036
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2456.969 ; gain = 0.000 ; free physical = 1861 ; free virtual = 14053
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/dont_touch.xdc]
-Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'U0'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports s_axi_aclk]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:1]
+Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'U0'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports s_axi_aclk]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:6]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:1]
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports data_clk_i]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:2]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:6]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports data_clk_i]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:7]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:2]
-Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_axi_i2s_adi_0_propImpl.xdc].
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc:7]
+Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_axi_i2s_adi_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_axi_i2s_adi_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2519.008 ; gain = 0.000 ; free physical = 3839 ; free virtual = 19869
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.930 ; gain = 0.000 ; free physical = 2470 ; free virtual = 14662
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2519.008 ; gain = 0.000 ; free physical = 3839 ; free virtual = 19869
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2520.930 ; gain = 0.000 ; free physical = 2470 ; free virtual = 14662
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2519.008 ; gain = 63.961 ; free physical = 3903 ; free virtual = 19933
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 2741 ; free virtual = 14929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2519.008 ; gain = 63.961 ; free physical = 3903 ; free virtual = 19933
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 2741 ; free virtual = 14929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/dont_touch.xdc, line 9).
-Applied set_property ASYNC_REG = true for U0/ctrl/cdc_sync_stage1_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 4).
-Applied set_property ASYNC_REG = true for U0/ctrl/\rx_gen.rx_sync /cdc_sync_stage1_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 4).
-Applied set_property ASYNC_REG = true for U0/ctrl/tx_sync/cdc_sync_stage1_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 4).
-Applied set_property ASYNC_REG = true for U0/ctrl/cdc_sync_stage2_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 4).
-Applied set_property ASYNC_REG = true for U0/ctrl/\rx_gen.rx_sync /cdc_sync_stage2_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 4).
-Applied set_property ASYNC_REG = true for U0/ctrl/tx_sync/cdc_sync_stage2_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property ASYNC_REG = true for U0/ctrl/cdc_sync_stage1_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for U0/ctrl/\rx_gen.rx_sync /cdc_sync_stage1_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for U0/ctrl/tx_sync/cdc_sync_stage1_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for U0/ctrl/cdc_sync_stage2_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for U0/ctrl/\rx_gen.rx_sync /cdc_sync_stage2_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for U0/ctrl/tx_sync/cdc_sync_stage2_tick_reg. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2519.008 ; gain = 63.961 ; free physical = 3903 ; free virtual = 19933
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 2742 ; free virtual = 14929
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'axi_ctrlif'
 INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'axi_ctrlif'
@@ -135,7 +133,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'axi_ctrlif'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2519.008 ; gain = 63.961 ; free physical = 3930 ; free virtual = 19961
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 2771 ; free virtual = 14959
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -188,7 +186,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2519.008 ; gain = 63.961 ; free physical = 4695 ; free virtual = 20730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 3599 ; free virtual = 15791
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -208,12 +206,140 @@ Note: The table above is a preliminary report that shows the Distributed RAMs at
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-1
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4303 ; free virtual = 16495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4303 ; free virtual = 16495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                                  | Inference | Size (Depth x Width) | Primitives  | 
++------------+---------------------------------------------+-----------+----------------------+-------------+
+|U0          | pl330_dma_tx_gen.tx_fifo/fifo/data_fifo_reg | Implied   | 8 x 24               | RAM32M x 4  | 
+|U0          | ctrl/tx_sync/fifo_reg                       | Implied   | 4 x 5                | RAM32M x 1  | 
+|U0          | ctrl/rx_gen.rx_sync/fifo_reg                | Implied   | 4 x 5                | RAM32M x 1  | 
+|U0          | pl330_dma_rx_gen.rx_fifo/fifo/data_fifo_reg | Implied   | 8 x 24               | RAM32M x 4  | 
++------------+---------------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4288 ; free virtual = 16479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4296 ; free virtual = 16487
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4296 ; free virtual = 16487
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4288 ; free virtual = 16479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4280 ; free virtual = 16471
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4280 ; free virtual = 16471
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4272 ; free virtual = 16463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     2|
+|2     |LUT1   |     7|
+|3     |LUT2   |    23|
+|4     |LUT3   |    40|
+|5     |LUT4   |    14|
+|6     |LUT5   |    38|
+|7     |LUT6   |    69|
+|8     |RAM32M |    10|
+|9     |FDPE   |     3|
+|10    |FDRE   |   215|
+|11    |FDSE   |     7|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4272 ; free virtual = 16463
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2520.930 ; gain = 0.000 ; free physical = 4260 ; free virtual = 16451
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.930 ; gain = 63.961 ; free physical = 4260 ; free virtual = 16451
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.930 ; gain = 0.000 ; free physical = 4314 ; free virtual = 16505
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.930 ; gain = 0.000 ; free physical = 4298 ; free virtual = 16490
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+
+Synth Design complete, checksum: 79f8e843
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 3 Warnings, 0 Critical Warnings and 1 Errors encountered.
-synth_design failed
-INFO: [Common 17-344] 'synth_design' was cancelled
-INFO: [Common 17-344] 'source' was cancelled
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 09:52:47 2024...
+47 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 2520.930 ; gain = 64.031 ; free physical = 4420 ; free virtual = 16612
+INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/system_axi_i2s_adi_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_axi_i2s_adi_0, cache-ID = 78591b23d5b2a546
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_i2s_adi_0_synth_1/system_axi_i2s_adi_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_axi_i2s_adi_0_utilization_synth.rpt -pb system_axi_i2s_adi_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 07:54:22 2024...

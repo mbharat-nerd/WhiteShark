@@ -2,18 +2,16 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun Nov 10 09:51:52 2024
-# Process ID: 978133
-# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1
+# Start of session at: Sat Nov 16 07:53:13 2024
+# Process ID: 1680514
+# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1
 # Command line: vivado -log system_axi_hdmi_dma_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_hdmi_dma_0.tcl
-# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/system_axi_hdmi_dma_0.vds
-# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/vivado.jou
+# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/system_axi_hdmi_dma_0.vds
+# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source system_axi_hdmi_dma_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/library'.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/ghdl/library'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
 Command: synth_design -top system_axi_hdmi_dma_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
@@ -22,167 +20,165 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 978476
+INFO: [Synth 8-7075] Helper process launched with PID 1680815
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2456.043 ; gain = 0.000 ; free physical = 4060 ; free virtual = 20085
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2454.969 ; gain = 0.000 ; free physical = 3816 ; free virtual = 15998
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'system_axi_hdmi_dma_0' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/synth/system_axi_hdmi_dma_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_regmap' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap.v:38]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap.v:181]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_regmap_request' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:38]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:195]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:148]
-INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo_address_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo_address_generator.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo_address_generator' (1#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo_address_generator.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo' (2#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:296]
-WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:296]
-WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:296]
-WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:296]
-WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:296]
-WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:296]
-WARNING: [Synth 8-7023] instance 'i_transfer_lenghts_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:296]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_regmap_request' (3#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap_request.v:38]
-INFO: [Synth 8-6157] synthesizing module 'up_axi' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/up_axi.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'up_axi' (4#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/up_axi.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_regmap' (5#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_regmap.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_transfer' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_transfer.v:38]
-INFO: [Synth 8-6157] synthesizing module 'dmac_2d_transfer' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/dmac_2d_transfer.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'dmac_2d_transfer' (6#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/dmac_2d_transfer.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_reset_manager' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_reset_manager.v:38]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_reset_manager.v:156]
-INFO: [Synth 8-6157] synthesizing module 'sync_bits' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/cb53/sync_bits.v:46]
-INFO: [Synth 8-6155] done synthesizing module 'sync_bits' (7#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/cb53/sync_bits.v:46]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_reset_manager' (8#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_reset_manager.v:38]
-INFO: [Synth 8-6157] synthesizing module 'request_arb' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:38]
-INFO: [Synth 8-6157] synthesizing module 'dest_axi_stream' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/dest_axi_stream.v:38]
-INFO: [Synth 8-6157] synthesizing module 'response_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/response_generator.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'response_generator' (9#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/response_generator.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'dest_axi_stream' (10#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/dest_axi_stream.v:38]
-INFO: [Synth 8-6157] synthesizing module 'src_axi_mm' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/src_axi_mm.v:38]
-INFO: [Synth 8-6157] synthesizing module 'splitter' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/splitter.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'splitter' (11#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/splitter.v:38]
-INFO: [Synth 8-6157] synthesizing module 'address_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/address_generator.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'address_generator' (12#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/address_generator.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'src_axi_mm' (13#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/src_axi_mm.v:38]
-INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/cb53/sync_bits.v:46]
-INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized0' (13#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/cb53/sync_bits.v:46]
-INFO: [Synth 8-6157] synthesizing module 'sync_event' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/cb53/sync_event.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'sync_event' (14#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/cb53/sync_event.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_register_slice.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice' (15#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_register_slice.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_burst_memory' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_burst_memory.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_resize_src' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_resize_src.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_resize_src' (16#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_resize_src.v:43]
-INFO: [Synth 8-6157] synthesizing module 'ad_mem_asym' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/ad_mem_asym.v:41]
-INFO: [Synth 8-6155] done synthesizing module 'ad_mem_asym' (17#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/ad_mem_asym.v:41]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_resize_dest' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_resize_dest.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_resize_dest' (18#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_resize_dest.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_burst_memory' (19#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_burst_memory.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_register_slice.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice__parameterized0' (19#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_register_slice.v:38]
-INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized0' (19#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1030]
-WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1030]
-WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1030]
-WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1030]
-WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1030]
-WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1030]
-WARNING: [Synth 8-7023] instance 'i_dest_req_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1030]
-INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized1' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized1' (19#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1058]
-WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1058]
-WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1058]
-WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1058]
-WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1058]
-WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1058]
-WARNING: [Synth 8-7023] instance 'i_src_req_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:1058]
-INFO: [Synth 8-6157] synthesizing module 'request_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_generator.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'request_generator' (20#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_generator.v:38]
-INFO: [Synth 8-6157] synthesizing module 'axi_dmac_response_manager' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:38]
-INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized2' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized2' (20#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/4e5e/util_axis_fifo.v:37]
-WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:118]
-WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:118]
-WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:118]
-WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:118]
-WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:118]
-WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:118]
-WARNING: [Synth 8-7023] instance 'i_dest_response_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:118]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_response_manager' (21#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_response_manager.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'request_arb' (22#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/request_arb.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_transfer' (23#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac_transfer.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'axi_dmac' (24#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/d606/axi_dmac.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'system_axi_hdmi_dma_0' (25#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/synth/system_axi_hdmi_dma_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_hdmi_dma_0' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/synth/system_axi_hdmi_dma_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_regmap' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap.v:192]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_regmap_request' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:215]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:155]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo_address_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo_address_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo_address_generator' (1#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo_address_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo' (2#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:339]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:339]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:339]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:339]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:339]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_transfer_lenghts_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:339]
+WARNING: [Synth 8-7023] instance 'i_transfer_lenghts_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:339]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_regmap_request' (3#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap_request.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_axi' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/up_axi.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_axi' (4#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/up_axi.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_regmap' (5#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_regmap.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_transfer' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_transfer.v:38]
+INFO: [Synth 8-6157] synthesizing module 'dmac_2d_transfer' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/dmac_2d_transfer.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'dmac_2d_transfer' (6#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/dmac_2d_transfer.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_reset_manager' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_reset_manager.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_reset_manager.v:171]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/2c96/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits' (7#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/2c96/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_reset_manager' (8#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_reset_manager.v:38]
+INFO: [Synth 8-6157] synthesizing module 'request_arb' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:38]
+INFO: [Synth 8-6157] synthesizing module 'dest_axi_stream' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/dest_axi_stream.v:38]
+INFO: [Synth 8-6157] synthesizing module 'response_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/response_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'response_generator' (9#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/response_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'dest_axi_stream' (10#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/dest_axi_stream.v:38]
+INFO: [Synth 8-6157] synthesizing module 'src_axi_mm' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/src_axi_mm.v:38]
+INFO: [Synth 8-6157] synthesizing module 'splitter' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/splitter.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'splitter' (11#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/splitter.v:38]
+INFO: [Synth 8-6157] synthesizing module 'address_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/address_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'address_generator' (12#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/address_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'src_axi_mm' (13#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/src_axi_mm.v:38]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/2c96/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized0' (13#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/2c96/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_register_slice.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice' (14#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_register_slice.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_burst_memory' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_burst_memory.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_resize_src' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_resize_src.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_resize_src' (15#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_resize_src.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ad_mem_asym' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/ad_mem_asym.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'ad_mem_asym' (16#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/common/ad_mem_asym.v:41]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_resize_dest' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_resize_dest.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_resize_dest' (17#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_resize_dest.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_burst_memory' (18#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_burst_memory.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_register_slice.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice__parameterized0' (18#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_register_slice.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized0' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized0' (18#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1021]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1021]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1021]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1021]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1021]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_dest_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1021]
+WARNING: [Synth 8-7023] instance 'i_dest_req_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1021]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized1' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized1' (18#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1046]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1046]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1046]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1046]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1046]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_src_req_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1046]
+WARNING: [Synth 8-7023] instance 'i_src_req_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:1046]
+INFO: [Synth 8-6157] synthesizing module 'request_generator' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'request_generator' (19#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_generator.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_dmac_response_manager' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized2' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized2' (19#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/f158/util_axis_fifo.v:37]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:119]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:119]
+WARNING: [Synth 8-7071] port 'm_axis_almost_empty' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:119]
+WARNING: [Synth 8-7071] port 's_axis_tkeep' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:119]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:119]
+WARNING: [Synth 8-7071] port 's_axis_almost_full' of module 'util_axis_fifo' is unconnected for instance 'i_dest_response_fifo' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:119]
+WARNING: [Synth 8-7023] instance 'i_dest_response_fifo' of module 'util_axis_fifo' has 20 connections declared, but only 14 given [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_response_manager' (20#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_response_manager.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'request_arb' (21#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/request_arb.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac_transfer' (22#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac_transfer.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dmac' (23#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ipshared/5880/axi_dmac.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_hdmi_dma_0' (24#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/synth/system_axi_hdmi_dma_0.v:57]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2456.043 ; gain = 0.000 ; free physical = 3603 ; free virtual = 19629
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2454.969 ; gain = 0.000 ; free physical = 3162 ; free virtual = 15345
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2456.043 ; gain = 0.000 ; free physical = 4100 ; free virtual = 20125
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2454.969 ; gain = 0.000 ; free physical = 3657 ; free virtual = 15840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2456.043 ; gain = 0.000 ; free physical = 4100 ; free virtual = 20125
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2454.969 ; gain = 0.000 ; free physical = 3657 ; free virtual = 15840
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2456.043 ; gain = 0.000 ; free physical = 3581 ; free virtual = 19606
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2454.969 ; gain = 0.000 ; free physical = 3642 ; free virtual = 15825
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/dont_touch.xdc]
-Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc] for cell 'inst'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports s_axi_aclk]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:2]
+Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc] for cell 'inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports [list m_axis_aclk m_src_axi_aclk s_axi_aclk]]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:14]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:2]
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports m_src_axi_aclk]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:3]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:14]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports [list m_axis_aclk m_src_axi_aclk s_axi_aclk]]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:15]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:3]
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports m_axis_aclk]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:4]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:15]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports [list m_axis_aclk m_src_axi_aclk s_axi_aclk]]'. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:16]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:4]
-Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc] for cell 'inst'
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc:16]
+Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc] for cell 'inst'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.004 ; gain = 0.000 ; free physical = 4557 ; free virtual = 20584
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2518.930 ; gain = 0.000 ; free physical = 2470 ; free virtual = 14653
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2520.004 ; gain = 0.000 ; free physical = 4554 ; free virtual = 20581
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2518.930 ; gain = 0.000 ; free physical = 2470 ; free virtual = 14653
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 4389 ; free virtual = 20417
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2948 ; free virtual = 15132
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 4389 ; free virtual = 20417
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2951 ; free virtual = 15135
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/dont_touch.xdc, line 9).
-Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 30).
-Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 35).
-Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 35).
-Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 35).
-Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 35).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_async_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 42).
+Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 47).
+Applied set_property SHREG_EXTRACT = NO for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 47).
+Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 47).
+Applied set_property ASYNC_REG = true for inst/i_transfer/i_reset_manager/\reset_gen[0].reset_sync_reg . (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.gen/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_constr.xdc, line 47).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 4389 ; free virtual = 20417
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2964 ; free virtual = 15147
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_dmac_reset_manager'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'request_generator'
@@ -219,7 +215,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_dmac_response_manager'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 4402 ; free virtual = 20430
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 3440 ; free virtual = 15624
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -254,33 +250,35 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 17    
 	                3 Bit    Registers := 5     
 	                2 Bit    Registers := 11    
-	                1 Bit    Registers := 72    
+	                1 Bit    Registers := 73    
 +---RAMs : 
 	               8K Bit	(128 X 64 bit)          RAMs := 1     
 	              136 Bit	(4 X 34 bit)          RAMs := 1     
 	               40 Bit	(8 X 5 bit)          RAMs := 1     
 +---Muxes : 
-	  16 Input   32 Bit        Muxes := 1     
+	  21 Input   32 Bit        Muxes := 1     
 	   2 Input   32 Bit        Muxes := 3     
-	  15 Input   32 Bit        Muxes := 1     
-	   2 Input   24 Bit        Muxes := 2     
-	   6 Input   21 Bit        Muxes := 1     
+	  16 Input   32 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 6     
+	   8 Input   21 Bit        Muxes := 1     
 	   5 Input   21 Bit        Muxes := 2     
 	   3 Input   17 Bit        Muxes := 1     
 	   6 Input    6 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 4     
 	   2 Input    4 Bit        Muxes := 6     
-	  16 Input    4 Bit        Muxes := 1     
+	  18 Input    4 Bit        Muxes := 1     
 	   7 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 50    
 	   5 Input    3 Bit        Muxes := 9     
 	   2 Input    2 Bit        Muxes := 5     
 	   3 Input    2 Bit        Muxes := 2     
 	   2 Input    1 Bit        Muxes := 76    
-	   5 Input    1 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 3     
 	   4 Input    1 Bit        Muxes := 4     
 	   6 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
 	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -298,7 +296,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 4133 ; free virtual = 20175
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2688 ; free virtual = 14881
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -330,13 +328,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 3853 ; free virtual = 19894
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2815 ; free virtual = 15009
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 3889 ; free virtual = 19930
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2822 ; free virtual = 15016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -367,7 +365,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance inst/i_transfer/i_request_arb/i_store_and_forward/i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 3848 ; free virtual = 19889
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2808 ; free virtual = 15002
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -385,37 +383,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 3048 ; free virtual = 19085
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2614 ; free virtual = 14812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 3048 ; free virtual = 19085
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2614 ; free virtual = 14812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 3001 ; free virtual = 19038
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2614 ; free virtual = 14812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 2993 ; free virtual = 19030
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2614 ; free virtual = 14812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 2969 ; free virtual = 19007
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2614 ; free virtual = 14812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 2961 ; free virtual = 18999
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2614 ; free virtual = 14812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -433,11 +431,11 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |    31|
 |2     |LUT1     |    45|
-|3     |LUT2     |    35|
+|3     |LUT2     |    42|
 |4     |LUT3     |    99|
-|5     |LUT4     |   114|
-|6     |LUT5     |   114|
-|7     |LUT6     |   218|
+|5     |LUT4     |   101|
+|6     |LUT5     |    97|
+|7     |LUT6     |   230|
 |8     |RAM16X1D |     3|
 |9     |RAM32M   |     1|
 |10    |RAMB36E1 |     1|
@@ -446,31 +444,31 @@ Report Cell Usage:
 |13    |FDSE     |    17|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 2961 ; free virtual = 18999
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2614 ; free virtual = 14812
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2520.004 ; gain = 0.000 ; free physical = 2897 ; free virtual = 18934
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2520.004 ; gain = 63.961 ; free physical = 2887 ; free virtual = 18924
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2518.930 ; gain = 0.000 ; free physical = 2602 ; free virtual = 14801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2518.930 ; gain = 63.961 ; free physical = 2602 ; free virtual = 14801
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2520.004 ; gain = 0.000 ; free physical = 2811 ; free virtual = 18848
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2518.930 ; gain = 0.000 ; free physical = 2695 ; free virtual = 14894
 INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.004 ; gain = 0.000 ; free physical = 2827 ; free virtual = 18865
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2518.930 ; gain = 0.000 ; free physical = 2679 ; free virtual = 14878
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   RAM16X1D => RAM32X1D (RAMD32(x2)): 3 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
 
-Synth Design complete, checksum: 8bbe1ee4
+Synth Design complete, checksum: 44d17faa
 INFO: [Common 17-83] Releasing license: Synthesis
-91 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+89 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 2520.004 ; gain = 64.031 ; free physical = 3014 ; free virtual = 19052
-INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/system_axi_hdmi_dma_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_axi_hdmi_dma_0, cache-ID = eb9e017f8c1f7a85
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 2518.930 ; gain = 64.031 ; free physical = 2829 ; free virtual = 15027
+INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/system_axi_hdmi_dma_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_axi_hdmi_dma_0, cache-ID = 5fe8f8ac072ee491
 INFO: [Coretcl 2-1174] Renamed 22 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/system_axi_hdmi_dma_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_axi_hdmi_dma_0_synth_1/system_axi_hdmi_dma_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_axi_hdmi_dma_0_utilization_synth.rpt -pb system_axi_hdmi_dma_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 09:52:36 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 07:54:00 2024...

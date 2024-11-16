@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2018 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -41,7 +41,7 @@ module ad_dds #(
   parameter DISABLE = 0,
   // range 8-24
   parameter DDS_DW = 16,
-  // range 8-16 (FIX ME)
+  // range 8-32
   parameter PHASE_DW = 16,
   // set 1 for CORDIC or 2 for Polynomial
   parameter DDS_TYPE = 1,
@@ -51,7 +51,8 @@ module ad_dds #(
   parameter CORDIC_PHASE_DW = 16,
   // the clock radtio between the device clock(sample rate) and the dac_core clock
   // 2^N, 1<N<6
-  parameter CLK_RATIO = 1) (
+  parameter CLK_RATIO = 1
+) (
 
   // interface
 
@@ -61,12 +62,12 @@ module ad_dds #(
   input                               dac_valid,
   input       [                15:0]  tone_1_scale,
   input       [                15:0]  tone_2_scale,
-  input       [                15:0]  tone_1_init_offset,
-  input       [                15:0]  tone_2_init_offset,
+  input       [        PHASE_DW-1:0]  tone_1_init_offset,
+  input       [        PHASE_DW-1:0]  tone_2_init_offset,
   input       [        PHASE_DW-1:0]  tone_1_freq_word,
   input       [        PHASE_DW-1:0]  tone_2_freq_word,
   output  reg [DDS_DW*CLK_RATIO-1:0]  dac_dds_data
-  );
+);
 
   wire [DDS_DW*CLK_RATIO-1:0] dac_dds_data_s;
 
@@ -146,13 +147,13 @@ module ad_dds #(
         end
 
         // phase to amplitude convertor
-         ad_dds_2 #(
-           .DDS_DW (DDS_DW),
-           .PHASE_DW (PHASE_DW),
-           .DDS_TYPE (DDS_TYPE),
-           .CORDIC_DW (CORDIC_DW),
-           .CORDIC_PHASE_DW (CORDIC_PHASE_DW))
-         i_dds_2 (
+        ad_dds_2 #(
+          .DDS_DW (DDS_DW),
+          .PHASE_DW (PHASE_DW),
+          .DDS_TYPE (DDS_TYPE),
+          .CORDIC_DW (CORDIC_DW),
+          .CORDIC_PHASE_DW (CORDIC_PHASE_DW)
+        ) i_dds_2 (
           .clk (clk),
           .dds_format (dac_dds_format),
           .dds_phase_0 (dac_dds_phase_0_m[i]),

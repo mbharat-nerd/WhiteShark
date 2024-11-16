@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -42,7 +42,8 @@ module up_clkgen #(
   parameter [ 7:0]  FPGA_FAMILY = 0,
   parameter [ 7:0]  SPEED_GRADE = 0,
   parameter [ 7:0]  DEV_PACKAGE = 0,
-  parameter [15:0]  FPGA_VOLTAGE = 0) (
+  parameter [15:0]  FPGA_VOLTAGE = 0
+) (
 
   // mmcm reset
 
@@ -73,7 +74,8 @@ module up_clkgen #(
   input                   up_rreq,
   input       [13:0]      up_raddr,
   output  reg [31:0]      up_rdata,
-  output  reg             up_rack);
+  output  reg             up_rack
+);
 
   localparam  PCORE_VERSION = 32'h00050063;
 
@@ -183,9 +185,10 @@ module up_clkgen #(
 
   // resets
 
-  ad_rst i_mmcm_rst_reg (.rst_async(up_mmcm_preset), .clk(up_clk), .rstn(), .rst(mmcm_rst));
+  ad_rst i_mmcm_rst_reg (
+    .rst_async(up_mmcm_preset),
+    .clk(up_clk),
+    .rstn(),
+    .rst(mmcm_rst));
 
 endmodule
-
-// ***************************************************************************
-// ***************************************************************************

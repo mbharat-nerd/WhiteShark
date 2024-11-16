@@ -80,6 +80,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DAC_DDS_CORDIC_DW">14</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DAC_DDS_CORDIC_PHASE_DW">13</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DAC_DDS_DISABLE">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DAC_DDS_PHASE_DW">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DAC_DDS_TYPE">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DAC_INIT_DELAY">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DAC_IODELAY_ENABLE">0</spirit:configurableElementValue>
@@ -112,6 +113,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DAC_DDS_CORDIC_DW">14</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DAC_DDS_CORDIC_PHASE_DW">13</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DAC_DDS_DISABLE">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DAC_DDS_PHASE_DW">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DAC_DDS_TYPE">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DAC_INIT_DELAY">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DAC_IODELAY_ENABLE">0</spirit:configurableElementValue>

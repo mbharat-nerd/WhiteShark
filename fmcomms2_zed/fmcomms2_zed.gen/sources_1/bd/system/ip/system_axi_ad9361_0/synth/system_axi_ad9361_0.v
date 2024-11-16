@@ -273,6 +273,7 @@ output wire [31 : 0] up_adc_gpio_out;
     .DAC_DATAPATH_DISABLE(0),
     .DAC_DDS_DISABLE(0),
     .DAC_DDS_TYPE(1),
+    .DAC_DDS_PHASE_DW(16),
     .DAC_DDS_CORDIC_DW(14),
     .DAC_DDS_CORDIC_PHASE_DW(13),
     .DAC_USERPORTS_DISABLE(0),

@@ -238,7 +238,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:11 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:23 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -269,7 +269,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Nov 10 17:50:11 UTC 2024</spirit:value>
+            <spirit:value>Sat Nov 16 15:51:23 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -285,6 +285,10 @@
           <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Nov 16 15:56:49 UTC 2024</spirit:value>
+          </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:43a347c3</spirit:value>
@@ -1417,7 +1421,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2c9a/util_wfifo.v</spirit:name>
+        <spirit:name>../../ipshared/ecbb/util_wfifo.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1521,8 +1525,8 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7b3b6318"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="d7b2a13b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7432b79f"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="3b5ef1e5"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="05df121e"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="680439ef"/>
     </xilinx:packagingInfo>

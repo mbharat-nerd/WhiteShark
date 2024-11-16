@@ -1,7 +1,22 @@
 
-set req_clk [get_clocks -of_objects [get_ports s_axi_aclk]]
-set src_clk [get_clocks -of_objects [get_ports -quiet {fifo_wr_clk s_axis_aclk m_src_axi_aclk}]]
-set dest_clk [get_clocks -of_objects [get_ports -quiet {fifo_rd_clk m_axis_aclk m_dest_axi_aclk}]]
+set req_clk_ports_base {s_axi_aclk}
+set src_clk_ports_base {fifo_wr_clk s_axis_aclk m_src_axi_aclk}
+set dest_clk_ports_base {fifo_rd_clk m_axis_aclk m_dest_axi_aclk}
+set req_clk_ports $req_clk_ports_base
+set src_clk_ports $src_clk_ports_base
+set dest_clk_ports $dest_clk_ports_base
+set req_clk_ports "$req_clk_ports $dest_clk_ports_base"
+set dest_clk_ports "$dest_clk_ports $req_clk_ports_base"
+set sg_clk_ports_base {m_sg_axi_aclk}
+set sg_clk_ports $sg_clk_ports_base
+set req_clk_ports "$req_clk_ports $sg_clk_ports_base"
+set sg_clk_ports "$sg_clk_ports $req_clk_ports_base"
+set dest_clk_ports "$dest_clk_ports $sg_clk_ports_base"
+set sg_clk_ports "$sg_clk_ports $dest_clk_ports_base"
+set sg_clk [get_clocks -of_objects [get_ports -quiet $sg_clk_ports]]
+set req_clk [get_clocks -of_objects [get_ports -quiet $req_clk_ports]]
+set src_clk [get_clocks -of_objects [get_ports -quiet $src_clk_ports]]
+set dest_clk [get_clocks -of_objects [get_ports -quiet $dest_clk_ports]]
 
 set_property ASYNC_REG TRUE \
 	[get_cells -quiet -hier *cdc_sync_stage1_reg*] \
@@ -137,7 +152,7 @@ set_max_delay -quiet -datapath_only \
 	-to $dest_clk \
 	[get_property -min PERIOD $dest_clk]
 
-  set_max_delay -quiet -datapath_only \
+set_max_delay -quiet -datapath_only \
   -from $src_clk \
   -through [get_cells -quiet -hier DP \
     -filter {NAME =~ *i_request_arb/eot_mem_dest_reg*}] \

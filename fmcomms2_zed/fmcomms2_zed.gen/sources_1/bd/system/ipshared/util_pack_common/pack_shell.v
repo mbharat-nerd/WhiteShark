@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2017-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -8,7 +8,7 @@
 // terms.
 //
 // The user should read each of these license terms, and understand the
-// freedoms and responsabilities that he or she has by using this source/core.
+// freedoms and responsibilities that he or she has by using this source/core.
 //
 // This core is distributed in the hope that it will be useful, but WITHOUT ANY
 // WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -57,7 +57,8 @@ module pack_shell #(
   output out_sync,
   output [NUM_OF_CHANNELS*SAMPLES_PER_CHANNEL-1:0] out_valid
 );
-  /* If the number of active channels can be a non-power of two */
+
+  // If the number of active channels can be a non-power of two
   localparam NON_POWER_OF_TWO = NUM_OF_CHANNELS > 2;
 
   localparam CHANNEL_DATA_WIDTH = SAMPLES_PER_CHANNEL * SAMPLE_DATA_WIDTH;
@@ -251,7 +252,6 @@ module pack_shell #(
          */
         reg rotate_msb = 1'b0;
 
-
         /*
          * Extended version of the normal control and data signals that can
          * handle 2*NUM_OF_CHANNELS channels.
@@ -348,8 +348,7 @@ module pack_shell #(
           .prefix_count (ext_prefix_count),
 
           .data_in (ext_data_in),
-          .data_out (ext_data_out)
-        );
+          .data_out (ext_data_out));
 
         /*
          * In order to go from this stage that has 2 * NUM_OF_SAMPLES inputs
@@ -365,9 +364,8 @@ module pack_shell #(
           .WORDS_PER_GROUP (2),
           .WORD_WIDTH (2 * SAMPLE_DATA_WIDTH)
         ) i_ext_shuffle (
-           .data_in (ext_data_out),
-           .data_out (ext_data_shuffled)
-        );
+          .data_in (ext_data_out),
+          .data_out (ext_data_shuffled));
 
         assign ext_data_in = {data_d1,{2*CHANNEL_DATA_WIDTH{1'b0}},in_data};
         assign data[0] = ext_data_shuffled[0+:TOTAL_DATA_WIDTH];
@@ -427,8 +425,7 @@ module pack_shell #(
             .prefix_count (prefix_count),
 
             .data_in (data[i]),
-            .data_out (data[i+1])
-          );
+            .data_out (data[i+1]));
         end else begin
           assign data[i+1] = data[i];
         end

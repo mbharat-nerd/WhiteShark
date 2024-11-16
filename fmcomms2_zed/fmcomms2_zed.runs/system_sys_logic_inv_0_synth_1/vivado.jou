@@ -2,11 +2,11 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun Nov 10 09:51:06 2024
-# Process ID: 977037
-# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_sys_logic_inv_0_synth_1
+# Start of session at: Sat Nov 16 07:52:26 2024
+# Process ID: 1679327
+# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_sys_logic_inv_0_synth_1
 # Command line: vivado -log system_sys_logic_inv_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_sys_logic_inv_0.tcl
-# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_sys_logic_inv_0_synth_1/system_sys_logic_inv_0.vds
-# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/openwifi-hw/adi-hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_sys_logic_inv_0_synth_1/vivado.jou
+# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_sys_logic_inv_0_synth_1/system_sys_logic_inv_0.vds
+# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/projects/fmcomms2/zed/fmcomms2_zed.runs/system_sys_logic_inv_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source system_sys_logic_inv_0.tcl -notrace

@@ -69,8 +69,8 @@ module system_util_ad9361_adc_pack_0 (
   fifo_wr_data_3,
   packed_fifo_wr_en,
   packed_fifo_wr_overflow,
-  packed_fifo_wr_sync,
-  packed_fifo_wr_data
+  packed_fifo_wr_data,
+  packed_sync
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME packed_fifo_wr_signal_clock, ASSOCIATED_BUSIF packed_fifo_wr, ASSOCIATED_RESET reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_util_ad9361_divclk_0_clk_out, INSERT_VIP 0" *)
@@ -93,10 +93,9 @@ input wire [15 : 0] fifo_wr_data_3;
 output wire packed_fifo_wr_en;
 (* X_INTERFACE_INFO = "analog.com:interface:fifo_wr:1.0 packed_fifo_wr OVERFLOW" *)
 input wire packed_fifo_wr_overflow;
-(* X_INTERFACE_INFO = "analog.com:interface:fifo_wr:1.0 packed_fifo_wr SYNC" *)
-output wire packed_fifo_wr_sync;
 (* X_INTERFACE_INFO = "analog.com:interface:fifo_wr:1.0 packed_fifo_wr DATA" *)
 output wire [63 : 0] packed_fifo_wr_data;
+output wire packed_sync;
 
   util_cpack2 #(
     .NUM_OF_CHANNELS(4),
@@ -237,7 +236,7 @@ output wire [63 : 0] packed_fifo_wr_data;
     .fifo_wr_data_63(16'B0),
     .packed_fifo_wr_en(packed_fifo_wr_en),
     .packed_fifo_wr_overflow(packed_fifo_wr_overflow),
-    .packed_fifo_wr_sync(packed_fifo_wr_sync),
-    .packed_fifo_wr_data(packed_fifo_wr_data)
+    .packed_fifo_wr_data(packed_fifo_wr_data),
+    .packed_sync(packed_sync)
   );
 endmodule

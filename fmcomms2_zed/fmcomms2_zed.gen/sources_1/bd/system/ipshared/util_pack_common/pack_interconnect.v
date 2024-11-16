@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2018 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2018-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -8,7 +8,7 @@
 // terms.
 //
 // The user should read each of these license terms, and understand the
-// freedoms and responsabilities that he or she has by using this source/core.
+// freedoms and responsibilities that he or she has by using this source/core.
 //
 // This core is distributed in the hope that it will be useful, but WITHOUT ANY
 // WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -72,28 +72,27 @@ module pack_interconnect #(
     localparam w = PORT_DATA_WIDTH;
     localparam NUM_SWITCHES = NUM_PORTS / z;
 
-    /* Do perfect shuffle, either in forward or reverse direction */
+    // Do perfect shuffle, either in forward or reverse direction
     for (i = 0; i < NUM_STAGES; i = i + 1) begin: gen_stages
-      /* Pack network are in the opposite direction */
+      // Pack network are in the opposite direction
       localparam ctrl_stage = PACK ? NUM_STAGES - i - 1 : i;
       wire [TOTAL_DATA_WIDTH-1:0] shuffle_in;
       wire [TOTAL_DATA_WIDTH-1:0] shuffle_out;
       wire [TOTAL_DATA_WIDTH-1:0] mux_in;
       wire [TOTAL_DATA_WIDTH-1:0] mux_out;
 
-      /* Unpack uses forward shuffle and pack a reverse shuffle */
+      // Unpack uses forward shuffle and pack a reverse shuffle
       ad_perfect_shuffle #(
         .NUM_GROUPS (PACK ? NUM_SWITCHES : z),
         .WORDS_PER_GROUP (PACK ? z : NUM_SWITCHES),
         .WORD_WIDTH (w)
       ) i_shuffle (
         .data_in (shuffle_in),
-        .data_out (shuffle_out)
-      );
+        .data_out (shuffle_out));
 
       for (j = 0; j < NUM_PORTS; j = j + 1) begin: gen_ports
         localparam ctrl_base = (ctrl_stage * NUM_PORTS + j) * MUX_ORDER;
-        localparam sel_base = j & ~(z-1); /* base increments in 2**MUX_ORDER steps */
+        localparam sel_base = j & ~(z-1); // base increments in 2**MUX_ORDER steps
 
         /*
          * To be able to better share MUX control signals and reduce overall

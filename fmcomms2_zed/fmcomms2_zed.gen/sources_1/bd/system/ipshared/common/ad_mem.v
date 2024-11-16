@@ -1,6 +1,6 @@
 // ***************************************************************************
 // ***************************************************************************
-// Copyright 2014 - 2017 (c) Analog Devices, Inc. All rights reserved.
+// Copyright (C) 2014-2023 Analog Devices, Inc. All rights reserved.
 //
 // In this HDL repository, there are many different and unique modules, consisting
 // of various HDL (Verilog or VHDL) components. The individual modules are
@@ -26,7 +26,7 @@
 //
 //   2. An ADI specific BSD license, which can be found in the top level directory
 //      of this repository (LICENSE_ADIBSD), and also on-line at:
-//      https://github.com/analogdevicesinc/hdl/blob/master/LICENSE_ADIBSD
+//      https://github.com/analogdevicesinc/hdl/blob/main/LICENSE_ADIBSD
 //      This will allow to generate bit files and not release the source code,
 //      as long as it attaches to an ADI device.
 //
@@ -38,8 +38,8 @@
 module ad_mem #(
 
   parameter  DATA_WIDTH = 16,
-  parameter  ADDRESS_WIDTH = 5) (
-
+  parameter  ADDRESS_WIDTH = 5
+) (
   input                               clka,
   input                               wea,
   input       [(ADDRESS_WIDTH-1):0]   addra,
@@ -48,7 +48,8 @@ module ad_mem #(
   input                               clkb,
   input                               reb,
   input       [(ADDRESS_WIDTH-1):0]   addrb,
-  output  reg [(DATA_WIDTH-1):0]      doutb);
+  output  reg [(DATA_WIDTH-1):0]      doutb
+);
 
   (* ram_style = "block" *)
   reg         [(DATA_WIDTH-1):0]      m_ram[0:((2**ADDRESS_WIDTH)-1)];
@@ -66,6 +67,3 @@ module ad_mem #(
   end
 
 endmodule
-
-// ***************************************************************************
-// ***************************************************************************

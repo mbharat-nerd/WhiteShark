@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Nov 16 08:35:26 2024
+# Process ID: 1708219
+# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed
+# Command line: vivado
+# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed/vivado.log
+# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/fmcomms2_zed/fmcomms2_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/adi_hdl/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:17 . Memory (MB): peak = 7721.988 ; gain = 264.773 ; free physical = 5201 ; free virtual = 18285
+update_compile_order -fileset sources_1

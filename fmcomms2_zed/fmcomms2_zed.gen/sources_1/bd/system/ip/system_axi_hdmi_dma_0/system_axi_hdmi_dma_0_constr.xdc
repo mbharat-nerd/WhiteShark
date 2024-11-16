@@ -1,7 +1,19 @@
 
-set req_clk [get_clocks -of_objects [get_ports s_axi_aclk]]
-set src_clk [get_clocks -of_objects [get_ports -quiet {fifo_wr_clk s_axis_aclk m_src_axi_aclk}]]
-set dest_clk [get_clocks -of_objects [get_ports -quiet {fifo_rd_clk m_axis_aclk m_dest_axi_aclk}]]
+set req_clk_ports_base {s_axi_aclk}
+set src_clk_ports_base {fifo_wr_clk s_axis_aclk m_src_axi_aclk}
+set dest_clk_ports_base {fifo_rd_clk m_axis_aclk m_dest_axi_aclk}
+set req_clk_ports $req_clk_ports_base
+set src_clk_ports $src_clk_ports_base
+set dest_clk_ports $dest_clk_ports_base
+set req_clk_ports "$req_clk_ports $src_clk_ports_base"
+set src_clk_ports "$src_clk_ports $req_clk_ports_base"
+set src_clk_ports "$src_clk_ports $dest_clk_ports_base"
+set dest_clk_ports "$dest_clk_ports $src_clk_ports_base"
+set req_clk_ports "$req_clk_ports $dest_clk_ports_base"
+set dest_clk_ports "$dest_clk_ports $req_clk_ports_base"
+set req_clk [get_clocks -of_objects [get_ports -quiet $req_clk_ports]]
+set src_clk [get_clocks -of_objects [get_ports -quiet $src_clk_ports]]
+set dest_clk [get_clocks -of_objects [get_ports -quiet $dest_clk_ports]]
 
 # Reset signals
 set_false_path -quiet \
