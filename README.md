@@ -14,7 +14,8 @@ docs/ -> documentation like board user's guide, XDC files etc.
 <br>
 zedHelloWorld/ -> Test project for the zedboard
 <br>
-zedWhiteShark/ -> zedboard implementation of WhiteShark
+fmcomms2_zed/ -> zedboard implementation of WhiteShark.  For now, we are using the pregenerated Analog Devices
+vivado project.  Once we are comfortable in understanding the ADI HDL sources, we will resort to use of TCL.
 <br>
 pz_7z030_pcie/ -> fpgadrive PCIe reference design for PicoZed 7030
 <br>
