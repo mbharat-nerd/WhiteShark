@@ -1,0 +1,217 @@
+
+*** Running vivado
+    with args -log pz_7z030_pcie_ref_clk_buf_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pz_7z030_pcie_ref_clk_buf_0.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source pz_7z030_pcie_ref_clk_buf_0.tcl -notrace
+Command: synth_design -top pz_7z030_pcie_ref_clk_buf_0 -part xc7z030sbg485-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Device 21-403] Loading part xc7z030sbg485-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1283349
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2432.977 ; gain = 0.000 ; free physical = 243 ; free virtual = 13674
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pz_7z030_pcie_ref_clk_buf_0' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/synth/pz_7z030_pcie_ref_clk_buf_0.vhd:65]
+	Parameter C_BUF_TYPE bound to: ibufdsgte2 - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/util_ds_buf.vhd:72' bound to instance 'U0' of component 'util_ds_buf' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/synth/pz_7z030_pcie_ref_clk_buf_0.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/util_ds_buf.vhd:243]
+INFO: [Synth 8-113] binding component instance 'IBUF_P_I' to cell 'IBUF' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/util_ds_buf.vhd:292]
+INFO: [Synth 8-113] binding component instance 'IBUF_N_I' to cell 'IBUF' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/util_ds_buf.vhd:294]
+INFO: [Synth 8-113] binding component instance 'IBUFDS_GTE2_I' to cell 'IBUFDS_GTE2' [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/util_ds_buf.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (1#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/util_ds_buf.vhd:243]
+INFO: [Synth 8-256] done synthesizing module 'pz_7z030_pcie_ref_clk_buf_0' (2#1) [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/synth/pz_7z030_pcie_ref_clk_buf_0.vhd:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 2432.977 ; gain = 0.000 ; free physical = 3590 ; free virtual = 13919
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 2432.977 ; gain = 0.000 ; free physical = 3607 ; free virtual = 13942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 2432.977 ; gain = 0.000 ; free physical = 3607 ; free virtual = 13942
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.977 ; gain = 0.000 ; free physical = 3578 ; free virtual = 13925
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/pz_7z030_pcie_ref_clk_buf_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/pz_7z030_pcie_ref_clk_buf_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/pz_7z030_pcie_ref_clk_buf_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.gen/sources_1/bd/pz_7z030_pcie/ip/pz_7z030_pcie_ref_clk_buf_0/pz_7z030_pcie_ref_clk_buf_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/pz_7z030_pcie_ref_clk_buf_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/pz_7z030_pcie_ref_clk_buf_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.035 ; gain = 0.000 ; free physical = 3246 ; free virtual = 13639
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:01 . Memory (MB): peak = 2495.035 ; gain = 0.000 ; free physical = 3190 ; free virtual = 13595
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:35 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 3208 ; free virtual = 13640
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030sbg485-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:35 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 3223 ; free virtual = 13657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/pz_7z030_pcie_ref_clk_buf_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:35 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 3223 ; free virtual = 13658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 3231 ; free virtual = 13667
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:36 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 3236 ; free virtual = 13692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:46 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2788 ; free virtual = 13272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:46 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2786 ; free virtual = 13271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:46 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2727 ; free virtual = 13211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2453 ; free virtual = 12944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2453 ; free virtual = 12944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2453 ; free virtual = 12944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2453 ; free virtual = 12944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2453 ; free virtual = 12944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2453 ; free virtual = 12944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |IBUFDS_GTE2 |     1|
+|2     |IBUF        |     2|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2453 ; free virtual = 12944
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:44 . Memory (MB): peak = 2495.035 ; gain = 0.000 ; free physical = 2455 ; free virtual = 12947
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:52 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2455 ; free virtual = 12947
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.035 ; gain = 0.000 ; free physical = 2439 ; free virtual = 12932
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.035 ; gain = 0.000 ; free physical = 2440 ; free virtual = 12963
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b5df2fbf
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 2495.035 ; gain = 62.059 ; free physical = 2708 ; free virtual = 13235
+INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/pz_7z030_pcie_ref_clk_buf_0_synth_1/pz_7z030_pcie_ref_clk_buf_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pz_7z030_pcie_ref_clk_buf_0, cache-ID = 37058f58e6a80704
+INFO: [Common 17-1381] The checkpoint '/home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/pz_7z030_pcie_ref_clk_buf_0_synth_1/pz_7z030_pcie_ref_clk_buf_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pz_7z030_pcie_ref_clk_buf_0_utilization_synth.rpt -pb pz_7z030_pcie_ref_clk_buf_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 19:54:32 2024...

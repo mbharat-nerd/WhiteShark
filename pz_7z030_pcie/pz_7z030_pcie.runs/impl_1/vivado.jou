@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Nov 13 20:01:07 2024
+# Process ID: 1288288
+# Current directory: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/impl_1
+# Command line: vivado -log pz_7z030_pcie_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pz_7z030_pcie_wrapper.tcl -notrace
+# Log file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/impl_1/pz_7z030_pcie_wrapper.vdi
+# Journal file: /home/bharathwaj/Research/fpgaStuff/xilinx/openWifiPacketFilter/WhiteShark/fpga-drive-aximm-pcie/Vivado/pz_7z030_pcie/pz_7z030_pcie.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source pz_7z030_pcie_wrapper.tcl -notrace
