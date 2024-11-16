@@ -4,12 +4,12 @@ zedHelloWorld/syn/webtalk*
 zedHelloWorld/src/*~
 zedHelloWorld/sim/*~
 
-zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.cache
-zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.hw
-zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.ip_user_files
-zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.runs
-zed_fmcs2/openwifi_zed_fmcs2/openwifi_zed_fmcs2.sim
-zed_fmcs2/.Xil
+fmccomms2_zed/fmccomms2_zed.cache
+fmccomms2_zed/fmccomms2_zed.hw
+fmccomms2_zed/fmccomms2_zed.ip_user_files
+fmccomms2_zed/fmccomms2_zed.runs
+fmccomms2_zed/fmccomms2_zed.sim
+fmccomms2_zed/.Xil
 
 
 
