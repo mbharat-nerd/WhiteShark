@@ -1,0 +1,21 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 7da736a225484a789bc709b6cf266162 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot triangleZed_tb_behav xil_defaultlib.triangleZed_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'period_counter' [/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/triangle.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/triangle.sv" Line 22. Module triangle_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/controlFSM.sv" Line 2. Module controlFSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/triangle.sv" Line 22. Module triangle_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/controlFSM.sv" Line 2. Module controlFSM doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controlFSM
+Compiling module xil_defaultlib.triangle_default
+Compiling module xil_defaultlib.triangleZed
+Compiling module xil_defaultlib.triangleZed_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot triangleZed_tb_behav

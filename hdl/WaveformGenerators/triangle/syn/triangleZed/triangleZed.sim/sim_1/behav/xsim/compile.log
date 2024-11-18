@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/controlFSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlFSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/triangle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triangle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/src/triangleZed.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triangleZed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/bharathwaj/Research/fpgaStuff/xilinx/softwareDefinedRadio/WhiteShark/hdl/WaveformGenerators/triangle/sim/triangleZed_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triangleZed_tb

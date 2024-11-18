@@ -1,0 +1,6 @@
+/syn/vivado/
+/syn/vivado*
+/src/*~
+/sim/*~
+/syn/*~
+

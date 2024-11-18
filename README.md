@@ -19,13 +19,15 @@ vivado project.  Once we are comfortable in understanding the ADI HDL sources, w
 <br>
 4.  fpga-drive-aximm-pcie/ -> git submodule of fpgadrive reference designs
 <br>
-5.  pz_7z030_pcie/ -> fpgadrive PCIe reference design for PicoZed 7030.  This was used as a GHRD (Golden Hardware Reference Design) for real-time TiB data storage.
+5.  hdl/ -> IPs that were implemented for experimenting with various concepts
 <br>
-6.  zedHelloWorld/ -> Test project for the zedboard
+6.  pz_7z030_pcie/ -> fpgadrive PCIe reference design for PicoZed 7030.  This was used as a GHRD (Golden Hardware Reference Design) for real-time TiB data storage.
 <br>
-7. zedBaremetalSoftware/ -> AD9364 no-OS software
+7.  zedHelloWorld/ -> Test project for the zedboard
 <br>
-8.   README.md -> this file
+8. zedBaremetalSoftware/ -> AD9364 no-OS software
+<br>
+9.   README.md -> this file
 
 # Build Instructions (Toolchain: Vivado 2021.1)
 
